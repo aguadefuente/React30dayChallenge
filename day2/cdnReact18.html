@@ -1,0 +1,40 @@
+<!--same exercise cdn and new react version-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>30 Days Of React Challenge</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      // createElement takes 3 argument which is->
+      // 1. The first argument is the type of element you want to create, which can be a string representing an HTML tag name
+      // 2. The second argument is an optional object that represents the properties or attributes you want to assign to the element.
+      // 3. The third argument is the content or children of the element, which can be a string or another React element.
+      const heading = React.createElement(
+        "h1",
+        { id: "heading" },
+        "This is the power of the react"
+      );
+
+      // createRoot function create a root element for rendering a React application in the DOM.
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+
+      // Render method converts the heading object(returned by the React.createElement) into the elements and renders into the root.
+      root.render(heading);
+    </script>
+  </body>
+</html>
