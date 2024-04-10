@@ -5,6 +5,8 @@ import "./App.css";
 import cssImg from "./images/css_logo.png";
 import htmlImg from "./images/html_logo.png";
 import reactImg from "./images/react_logo.png";
+import Subscribe from "./Form";
+import Card from "./Card";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <img src={cssImg} alt="cssimg" />
         <img src={reactImg} alt="reactimg" />
       </div>
+      <Card></Card>
+      <Subscribe></Subscribe>
     </>
   );
 }
