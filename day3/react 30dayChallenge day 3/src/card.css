@@ -1,0 +1,23 @@
+.card-container {
+  width: 300px;
+  height: 400px;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 6px 6px 1px powderblue;
+  margin: 10px auto;
+}
+
+.skills-container {
+  display: flex;
+  gap: 3px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: center;
+}

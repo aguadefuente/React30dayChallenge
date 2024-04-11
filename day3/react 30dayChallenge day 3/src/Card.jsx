@@ -1,4 +1,5 @@
 import authorImg from "./images/asabeneh.jpg";
+import "./card.css";
 
 const Card = () => {
   const data = {
@@ -11,7 +12,7 @@ const Card = () => {
   };
 
   const style_skills = {
-    backgroundColor: "powderBlue",
+    backgroundColor: "#ff5722",
     margin: "5px",
     width: "50px",
     height: "20px",
@@ -30,12 +31,13 @@ const Card = () => {
     <>
       <div className="card-container">
         <img src={data.image} alt="authorImg" />
-        <h3>
+        <h2>
           {data.name} {data.lastname}
-        </h3>
+        </h2>
         <p>{data.country}</p>
         <p>{data.job}</p>
-        <ul>{techskills}</ul>
+        <h2>Skills</h2>
+        <ul className="skills-container">{techskills}</ul>
       </div>
     </>
   );
