@@ -1,0 +1,42 @@
+What is the difference between a regular function and an arrow function?
+
+
+What is a React Component?
+How do you make a React functional component?
+What is the difference between a pure JavaScript function and a functional component?
+How small is a React component?
+Can we make a button or input field component?
+Make a reusable Button component.
+Make a reusable InputField component.
+Make a reusable alert box component with one div parent element and one p child element of the div(warning alert box, success alert box).
+
+Use the given hexadecimal color generator in the example to create these random colors
+const hexaColor = () => {
+  let str = '0123456789abcdef'
+  let color = ''
+  for (let i = 0; i < 6; i++) {
+    let index = Math.floor(Math.random() * str.length)
+    color += str[index]
+  }
+  return '#' + color
+}
+
+const HexaColor = () => {
+  const bgColor = hexaColor()
+  const styles = {
+    height: '100px',
+    display: 'flex',
+    'justify-content': 'center',
+    'align-items': 'center',
+    fontFamily: 'Montserrat',
+    margin: '2px auto',
+    borderRadius: '5px',
+    width: '75%',
+    border: '2px solid black',
+  }
+  return (
+    <div style={styles}>
+      <h2>{bgColor}</h2>
+    </div>
+  )
+}
