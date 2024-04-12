@@ -20,6 +20,7 @@
     ></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
+      //random hexacolor function
       const hexaColor = () => {
         let str = "0123456789abcdef";
         let color = "";
@@ -30,10 +31,12 @@
         return "#" + color;
       };
 
-      const hexaArr = new Array(6).map((_) => hexaColor());
+      //array con cinco random hexacolor
+      const hexaArr = new Array(5).fill(true).map(() => hexaColor());
+      console.log(hexaArr);
 
-      const HexaColor = () => {
-        const bgColor = hexaColor();
+      //Component
+      const HexaColor = ({ color }) => {
         const styles = {
           height: "100px",
           display: "flex",
@@ -44,20 +47,25 @@
           borderRadius: "5px",
           width: "75%",
           border: "2px solid black",
-          backgroundColor: bgColor,
+          backgroundColor: color,
         };
         return (
           <>
             <div style={styles}>
-              <h2>{bgColor}</h2>
+              <h2>{color}</h2>
             </div>
           </>
         );
       };
 
+      //to render five components
+      const fiveComp = hexaArr.map((randomColor) => (
+        <HexaColor key={randomColor} color={randomColor} />
+      ));
+
       const root = ReactDOM.createRoot(document.getElementById("root"));
 
-      root.render(<HexaColor />);
+      root.render(fiveComp);
     </script>
   </body>
 </html>
