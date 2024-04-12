@@ -1,42 +1,26 @@
 What is the difference between a regular function and an arrow function?
+https://dmitripavlutin.com/differences-between-arrow-and-regular-functions/#:~:text=Inside%20the%20body%20of%20a,the%20function%20has%20been%20invoked.&text=Inside%20of%20myFunction()%20body,a'%20and%20'b'%20.
+https://www.freecodecamp.org/news/the-difference-between-arrow-functions-and-normal-functions/
 
+Inside the body of a regular function, arguments is a special array-like object containing 
+the list of arguments with which the function has been invoked
+eg: function print() {
+        console.log(arguments); // {'0: 'hello', 1: 400, 2: false }
+        console.log(arguments[1]); //caca
+      }
+print("hola", "caca", "pollo");
 
 What is a React Component?
-How do you make a React functional component?
-What is the difference between a pure JavaScript function and a functional component?
-How small is a React component?
-Can we make a button or input field component?
-Make a reusable Button component.
-Make a reusable InputField component.
-Make a reusable alert box component with one div parent element and one p child element of the div(warning alert box, success alert box).
+Fundation to build user interface, core concept of React
+Are functions which accept an object called props and return something rendarable (other component, strings, null, numbers...)
+is a JS function may returns some markup (jsx), that React renders into the browser
+and starts in capital letter.
+Use a syntax extension called jsx
+Use props to comunicate each other
+In React every peace of UI is a component
+It is define at the top level, no nested inside other component
 
-Use the given hexadecimal color generator in the example to create these random colors
-const hexaColor = () => {
-  let str = '0123456789abcdef'
-  let color = ''
-  for (let i = 0; i < 6; i++) {
-    let index = Math.floor(Math.random() * str.length)
-    color += str[index]
-  }
-  return '#' + color
-}
 
-const HexaColor = () => {
-  const bgColor = hexaColor()
-  const styles = {
-    height: '100px',
-    display: 'flex',
-    'justify-content': 'center',
-    'align-items': 'center',
-    fontFamily: 'Montserrat',
-    margin: '2px auto',
-    borderRadius: '5px',
-    width: '75%',
-    border: '2px solid black',
-  }
-  return (
-    <div style={styles}>
-      <h2>{bgColor}</h2>
-    </div>
-  )
-}
+
+
+

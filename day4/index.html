@@ -1,4 +1,12 @@
 <!--React cdn-->
+<!--Ejercicios
+
+- Make a reusable Button component.
+
+- Use the given hexadecimal color generator in the example to create these random colors
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -63,6 +71,11 @@
         <HexaColor key={randomColor} color={randomColor} />
       ));
 
+      const ImAButton = () => {
+        return <button onClick={ImAnAllertBox}>I'm a Button</button>;
+      };
+
+      //root
       const root = ReactDOM.createRoot(document.getElementById("root"));
 
       root.render(fiveComp);
