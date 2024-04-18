@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-//TRABAJANDO CON CLASS COMPONENT
+//DAY7: TRABAJANDO CON CLASS COMPONENT
 // class Component {
 //   constructor(props) {}
 // }
