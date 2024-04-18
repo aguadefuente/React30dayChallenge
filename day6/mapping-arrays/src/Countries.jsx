@@ -17,11 +17,10 @@ console.log(typeof worldPopulation);
 
 const outerContainer = {
   display: "flex",
-  justifyContent: "space-around",
+  justifyContent: "space-evenly",
   flexDirection: "row",
   alignItems: "center",
-
-  gap: "5px",
+  //gap: "5px",
 };
 
 const forma = {
